@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class hargaJeruk {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Masukkan jumlah jeruk : ");
+        double jumlah = scanner.nextDouble();
+        
+        double totalBiaya = 0;
+
+        if (jumlah == 1) {
+            totalBiaya = 3000;
+        } else if (jumlah == 2) {
+            totalBiaya = 5000;
+        }else if (jumlah == 5){
+            totalBiaya = 10000; 
+        } else {
+            totalBiaya = 10000 + (jumlah - 5) * 3000; 
+        }
+       double totalBayar =totalBiaya;
+
+       System.out.println("Total Bayar : " +totalBayar); 
+        scanner.close();
+    }
+}
